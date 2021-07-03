@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#container{
+  width: 100%;
+}
+#row{
+    width: 100%;
+}
+#navbar{
+    width: 100%;
+    height: 80px;
+    background: #BE3144;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid #29344B;
+}
+#navbar a{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 24px;
+    color: #fff;
+    transition: .5s;
+    float: right;  
+}
+#navbar a:hover{
+    background: #45567D;
+}
+#welcome-section{
+    height: 100vh;
+    background: #2F3033;
+    padding-top: 260px;
+}
+#welcome-section h1{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#welcome-section p{
+    color: #772D39;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+}
+#projects{
+    height: auto;
+    background: #45567D;
+    padding: 30px;
+    padding-top: 70px;
+}
+#projects h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+hr{
+    margin-top: 0;
+    width: 550px;
+    height: 3px;
+    background: #fff;
+    border-radius: none;
+}
+.displayFlex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.project-tile{
+    width: 33.33%;
+    padding: 20px;
+    cursor: pointer;
+    height: 500px;
+}
+
+#middle-image{
+    width: 100%;
+    height: 75%;
+}
+
+.project-tile a{
+    background: #303841;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    width: 100%;
+    display: block;
+    height: 70px;
+    padding-top: 20px;
+    margin-top: -5px;
+}
+.project-tile a:before {
+    content: '< ';
+    opacity: 0;
+    transition: 0.7s;
+    color: #D8724D;
+  }
+
+.project-tile a:after {
+    content: ' />';
+    opacity: 0;
+    transition: 0.7s;
+    color: #D8724D;
+  }
+ 
+  .project-tile:hover a:before {
+    opacity: 1;
+  }
+  
+  .project-tile:hover a:after {
+    opacity: 1;
+  }
+
+  button{
+    background: #303841;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .showButton{
+      text-align: center;
+  }
+
+  .buttonspan{
+      opacity: 0;
+      transition: .4s;
+  }
+
+  button:hover .buttonspan{
+    opacity: 1;
+    padding-left: 3px;
+  }
+
+  #contact{
+      height: 90vh;
+      background: #303841;
+  }
+
+  #contact h1{
+      margin-top: 0;
+      color: #fff;
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 0;
+      padding-top: 220px;
+  }
+  #contact p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+}
+#social-link{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 100px ;
+    justify-content: center;    
+    align-items: center; 
+}
+#innersocialLink{
+    padding: 20px;
+    cursor: pointer;
+}
+#innersocialLink i{
+    font-size: 36px;
+    color: #fff;
+    float: left;
+}
+#innersocialLink a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    float: left;
+    margin-top: 6px;
+    margin-left: 5px;
+    transition: .3s;
+}
+
+#innersocialLink a:hover {
+    margin-top: 10px;
+}
+footer{
+    border-top: 4px solid #BE3144;
+    background: #303841;   
+    margin: 0;
+    height: 100px; 
+    padding: 40px 70px;
+}
+footer p{
+    width: 70%;
+}
+footer span{
+    width: 30%;
+}
+footer p, footer span{
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    text-align: justify;
+}
+footer span{
+    float: right;
+
+}
+
+@media screen  and (max-width: 600px){
+
+    .displayFlex{
+    flex-direction: column;
+    }
+    .project-tile{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    hr{
+        width: 100%;
+    }
+    #social-link{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #contact h1{
+        padding-top: 120px;
+    }
+    footer{
+        height: 180px; 
+        padding: 10px;
+    }
+    
+    footer p, footer span{
+        margin: 0;
+        color: #fff;
+        font-size: 18px;
+        float: left;
+    }
+}
