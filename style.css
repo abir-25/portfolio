@@ -207,21 +207,25 @@ footer{
     padding: 40px 70px;
 }
 footer p{
-    width: 70%;
+    width: 85%;
 }
 footer span{
-    width: 30%;
+    width: 15%;
 }
-footer p, footer span{
+footer p{
     margin: 0;
     color: #fff;
     font-size: 20px;
     float: left;
     text-align: justify;
 }
-footer span{
-    float: right;
 
+footer span{
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    text-align: justify;
 }
 
 @media screen  and (max-width: 600px){
